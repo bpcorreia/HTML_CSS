@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon_red_black.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="principal">
+    <h1 class="register">Register Form</h1>
+    
+    <h2>Nome 
+        <input type="text" name="txtNome" id="txtNome" size="30" >
+    </h2>
+    
+    <h2>Apelido
+        <input type="text" name="txtApelido" id="txtApelido" size="30">
+    </h2>
+    <div id="escondido"> 
+        <h2>ficheiro
+            <input type="text" value="text" id="txtFile" size="30">
+        </h2>
+    </div>
+    <h2><input type="button" value="Submit" onclick="Submit()"></h2>
+    <p><input type="button" value="Write to File" onclick="Write()"></p>
+    <div id ="res">
+        Preencha os dados acima, por favor.
+    </div>
+    <div id="morada">
+        <p>-----Morada-----</p>
+        <h2>Morada
+             <input type="text" name="txtMorada" id="txtMorada" size="30" >
+        </h2>
+        <h2>Cidade
+           <input type="text" name="txtCidade" id="txtCidade" size="30">
+        </h2>
+        <h2>Codigo Postal
+            <input type="number" name="txtCPostal" id="txtCPostal" size="30">
+     </h2>
+        <h2>Telefone
+            <input type="number" name="txtTelefone" id="txtTelefone" size="30">
+        </h2>
+    </div>
+</div>
+        
+<footer>
+    <p>&copy; BrunoCorreia</p>
+</footer>
+<script src="fileSaver.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

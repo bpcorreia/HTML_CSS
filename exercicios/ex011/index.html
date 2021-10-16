@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_yellow_black.ico" type="image/x-icon">
+    <title>Imagens Dinamicas em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em varios dispositivos diferentes, ou aumente e diminua o tamanho do seu browser.</p>
+    <p>Pode testar no browser fazendo F12 e depois no modo Ctrl + Shit + M</p>
+
+    <picture>
+         <!--   <source media="(max-width: 550px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> 
+            <img src="imagens/foto-g.png" alt="Imagem flexivel">-->
+        
+        <source media="(max-width: 550px)" srcset="imagens/bc-logo-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/bc-logo-m.png" type="image/png"> 
+        <img src="imagens/bc-logo-g.png" alt="Imagem flexivel">  
+    </picture>
+    <h1>Reproduzir Audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+    <audio src="audio/happy-mistake.mp3" controls autoplay loop></audio>
+    <!--
+   OU OU OU -->
+       
+   <!--MP3 -->
+   Podcast
+   <audio preload="metadata" controls  >
+        <source src="audio/guanacast-33.mp3" type="audio/mpeg">
+            <p>Infelizmente o seu browser nao suporta audio. <a href="audio/guanacast-33.mp3">Clique aqui para fazer o download do MP3.</a></p>
+    </audio>
+</body>
+</html>

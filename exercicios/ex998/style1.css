@@ -1,0 +1,5 @@
+input {
+    width: 10%;
+   /* display: block;*/
+    min-width: 150px;
+}

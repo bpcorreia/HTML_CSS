@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs</title>
+    <style>
+        .flex-container {
+            display: flex;
+        }
+        .flex-child {
+            flex:1;
+            border: 2px solid yellow;
+        }
+        .flex-child:first-child {
+            margin-right: 20px;
+          /*  background-color: green;*/        }
+        
+        div#1 {
+            background-color: magenta;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h2>O metodo Flex</h2>
+    <div class="flex-container">
+
+        <div class="flex-child">
+            Flex Column 1
+        </div>
+        <div id="2" class="flex-child">
+            Flex Column 2
+        </div>
+    </div>
+</body>
+</html>

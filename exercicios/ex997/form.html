@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation in JS</title>
+    <link rel="shortcut icon" href="favicon_red_yellow.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cd61f3fb3b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" name="username" id="username" placeholder="username">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" name="email" id="email" placeholder="chicoze@gogo.com">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Username</label>
+                <input type="password" name="password2" id="password2" placeholder="Password check">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button>Submit</button>
+            <input type="button" id="readData" value="Read" onclick="Read()">
+            <input type="button" id="resetData" value="Reset" onclick="Reset()">
+            <div id = "ler">
+                A preparar para ler dados...
+            </div>
+        </form>
+    </div>
+
+<footer>
+       <div>
+           <p>&copy; BrunoCorreia</p>
+       </div>
+       
+</footer>  
+<script src="script.js"></script> 
+</body>
+</html>
