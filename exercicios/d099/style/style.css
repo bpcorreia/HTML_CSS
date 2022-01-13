@@ -1,0 +1,57 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --font1: 'Oswald', sans-serif;
+    --font2: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header, footer {
+    background-image: url('../images/wallpaper001.jpg');
+    background-color: rgb(59, 58, 58);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: var(--font1);
+    font-variant: small-caps;
+    text-align: center;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 10px;
+    font-family: var(--font2);
+}
+
+
+section.image > p {
+    display: inline-block;
+    padding: 5px;
+   
+}
+section#img01 {
+    background-image: url('../images/in-the-field.jpg');
+    background-position: center center;
+}
+
+section#img02{
+
+}
