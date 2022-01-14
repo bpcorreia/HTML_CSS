@@ -13,6 +13,11 @@
     margin: 0px;
     padding: 0px;
 }
+
+body {
+    min-height: 100vh;
+
+}
 header, footer {
     background-image: url('../images/wallpaper001.jpg');
     background-color: rgb(59, 58, 58);
@@ -39,19 +44,36 @@ section {
     padding-bottom: 5vh;
     padding-left: 10px;
     font-family: var(--font2);
+    
 }
 
+section > p {
+    width: 75vh;
+}
+
+section.image {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    background-attachment: fixed;
+}
 
 section.image > p {
     display: inline-block;
-    padding: 5px;
-   
+    background-color: rgba(0, 0, 0, 0.295);
+    padding: 10px;
+        
 }
+
+
 section#img01 {
-    background-image: url('../images/in-the-field.jpg');
-    background-position: center center;
+  background-image: url('../images/wheat-field.jpg');
+  background-position: center center;
+  height: 100vh;
+  background-size: cover;
 }
 
 section#img02{
-
-}
+    background-image: url('../images/in-the-field.jpg');
+    height: 100vh;
+    background-size: cover;
+} 
