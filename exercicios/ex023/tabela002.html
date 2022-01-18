@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('images/wallpaper001.jpg');
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            background-image: url('images/wallpaper004.jpg');
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para Tabelas Grandes
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Região</th>
+                <th>População</th>
+                <th>% da População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Região Norte</td>
+                <td class="num">3 588 701</td>
+                <td class="num">34,7%</td>
+            </tr>
+            <tr>
+                <td>Área Metropolitana de Lisboa</td>
+                <td class="num">2 871 133</td>
+                <td class="num">27,7%</td>
+            </tr>
+            <tr>
+                <td>Região Centro</td>
+                <td class="num">2 227 912</td>
+                <td class="num">21,5%</td>
+            </tr>
+            <tr>
+                <td>Região do Alentejo</td>
+                <td class="num">704 934</td>
+                <td class="num">6,8%</td>
+            </tr>
+            <tr>
+                <td>Região do Algarve</td>
+                <td class="num">467 495</td>
+                <td class="num">4,5%</td>
+            </tr>
+            <tr>
+                <td>Região Autónoma da Madeira</td>
+                <td class="num">251 060</td>
+                <td class="num">2,4%</td>
+            </tr>
+            <tr>
+                <td>Região Autónoma dos Açores</td>
+                <td class="num">236 657</td>
+                <td class="num">2,3%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>10 347 892</strong></td>
+                <td class="num"><strong>100%</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
