@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#display {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex quae natus consequuntur similique adipisci blanditiis expedita laboriosam quisquam amet esse, exercitationem error optio quia corrupti sequi! Ipsa, exercitationem doloribus?.</p> 
+    
+    <ul>
+       <!--CTRL + SPACE--> 
+       <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nobis iure eius praesentium neque, sequi facere esse eos ipsum culpa illo dolorem dolore, similique eveniet molestiae eaque excepturi doloremque cupiditate.</p>
+
+    <iframe id="display" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officia animi fugiat. Consequuntur soluta, voluptas natus voluptatibus, corporis autem commodi ipsam assumenda officiis aliquid porro nostrum in velit. Exercitationem, distinctio?</p><img src='images/favicon_yellow_black.ico'>">
+        <p>Infelizmente o seu browser não é compativel com o iframe</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur inventore accusamus doloremque obcaecati iusto accusantium, delectus voluptatibus odio, distinctio veritatis ratione quia deserunt vel dolore! In suscipit sunt facere rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum at magni voluptates facere dolor quo minus sequi iure mollitia dignissimos dicta, dolorem doloribus saepe provident repudiandae ipsum non esse dolores?</p>
+</body>
+</html>
