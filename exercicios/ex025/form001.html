@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_yellow_black.ico" type="image/x-icon">
     <title>Formulário</title>
     <style>
         * {
@@ -13,9 +14,12 @@
 </head>
 <body>
     <h1>Primeiro Formulário</h1>
-    <form action="">
-        <p>Nome: </p>
-        <p>Apelido: </p>
+    <form action="registo.php" method="post" autocomplete="off" >
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome"></p>
+        <p><label for="iapelido">Apelido:</label>
+             <input type="text" name="apelido" id="iapelido"></p>
+        <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
 </html>
