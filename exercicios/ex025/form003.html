@@ -41,12 +41,16 @@
     <script>
         var b = 'bruno pedro'
         const d = new Date();
+        var dia = d.getDate();
         var mes = d.getMonth() + 1;
         var mesFormated = ("0" + mes).slice(-2);
         var ano = d.getFullYear();
-        var today = ano + '-' + mesFormated;
+        var AnoMes = ano + '-' + mesFormated
+        var today = ano + '-' + mesFormated + '-' + dia;
         
-        document.getElementById("imes").value = today;
+        document.getElementById("imes").value = AnoMes;
+        document.getElementById('idia').value = today
+        document.getElementById('texto2').innerHTML = today
         
     </script>
 </body>
