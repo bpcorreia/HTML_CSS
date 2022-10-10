@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="registo.php" method="post" autocomplete="on">
+        <!--Se usarmos um elemento que ultrapassa os 3000 bytes temos que usar o POST Ex.se incluirmos imagem ou ficheiro-->
+        <p>
+            <label for="icid">Cidade</label>
+            <select name="cidade" id="icid">
+                
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Norte">
+                    <option value="PT">Porto</option>
+                    <option value="CO">Coimbra</option>
+                    <option value="VR">Vila Real</option>
+                    <option value="MC">Macedo de Cavaleiros</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="LX">Lisboa</option>
+                    <option value="SE">Setubal</option>
+                    <option value="EV">Evora</option>
+                    <option value="FR">Faro</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrator</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
